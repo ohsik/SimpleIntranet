@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;    
+}
+html, body{
+    padding: 20px;    
+}
+.main-div{
+    width: 41%;
+    margin: 0.5%;
+    padding: 20px;
+    float: left;
+    position: relative;
+}
+
+/*Font awesome style*/
+i.fa{
+    color: #3489D6;
+    cursor: pointer;
+    font-size: 80%;   
+}
+.list-div i{
+    display: none;
+}
+.add-btn{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+    padding: 10px;
+    font-size: 140%;  
+}
+.edit-btn{
+    float: left;
+    display: none;
+    padding: 0 10px;    
+}
+.edit-btn i{
+    padding: 0 5px;    
+}
+
+/*Light box*/
+.white-popup{
+    background: #fff;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#remove-msg{
+    display: none;    
+}
