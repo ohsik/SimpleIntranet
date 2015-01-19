@@ -20,6 +20,7 @@ $( document ).ready(function() {
         }
     });
 
+
     // *Edit button on each divs (When edit icon clicked, show all edit buttons)
     //----------------------------------------------------------------------------------------------------
     var selecteddiv = '[id^="draggable"] .add-btn > i';
