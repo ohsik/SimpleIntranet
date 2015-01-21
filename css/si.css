@@ -109,4 +109,11 @@ textarea{
     .main-div{
         width: 99%;
     }
+    .logo, .site-title nav{
+        width: 100%; 
+        text-align: center;
+    }
+    .logo h1{
+        margin: 5px 0;
+    }
 }
