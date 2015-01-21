@@ -78,12 +78,21 @@ $( document ).ready(function() {
         } else if ( selectedform == "download" ){
             $(".con-form").hide(); 
             $("#file").fadeIn(); 
+        } else if ( selectedform == "modalcontent" ){
+            $(".con-form").hide(); 
+            $("#modalcontent").fadeIn(); 
         } else {
             $(".con-form").hide(); 
             $("#content").fadeIn();
         }
     });
    
-    
-    
+   
+    // *TinyMCE
+    //----------------------------------------------------------------------------------------------------
+    tinymce.init({
+        selector: 'textarea'
+    });
+
+
 });

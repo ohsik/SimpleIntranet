@@ -58,6 +58,11 @@ ul li i.fa{
     padding: 0 10px;    
     list-style: none;
 }
+nav a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 800;    
+}
 
 /*Font awesome style*/
 i.fa{
@@ -101,8 +106,11 @@ input[type="file"]{
 textarea{
     min-height: 200px;    
 }
-#link, #file{
+#link, #file, #modalcontent{
     display: none;   
+}
+.m-footer{
+    margin: 20px 0;
 }
 
 @media (max-width: 767px){
