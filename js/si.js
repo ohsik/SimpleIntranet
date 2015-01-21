@@ -40,6 +40,24 @@ $( document ).ready(function() {
         $(".clickedtext").html(cltxt);
     });
     
+    // *Color changes on box
+    //----------------------------------------------------------------------------------------------------
+    var changecolor = '[id^="draggable"] .add-btn .color-choose';
+    var stuff = ["#cccccc", "#cf3a3a", "#3aa2c8", "#5eab43", "#c55dc4", "#dcc648"]; // Set Colors 
+    counter = 0;
+    console.log(stuff[counter]); // your initial value
+    
+    // the next line, of course, assumes you have an element with id="next"
+    $(changecolor).click(function () {
+        counter = (counter + 1) % stuff.length; // increment your counter
+        // the modulus (%) operator resets the counter to 0
+        // when it reaches the length of the array
+        
+        var parentofthis = $(this).closest('[id^="draggable"]').attr('id');
+        $('#' + parentofthis).css({"border-top-color": stuff[counter], "border-top-width":"5px", "border-top-style":"solid"});
+        console.log(stuff[counter]); // the new incremented value
+    });
+
 
     // *Remodal enable by adding data attribute
     //----------------------------------------------------------------------------------------------------
@@ -63,9 +81,7 @@ $( document ).ready(function() {
             $("#content").fadeIn();
         }
     });
-    
-    
-    
+   
     
     
 });
