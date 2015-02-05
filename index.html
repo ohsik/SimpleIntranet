@@ -22,9 +22,6 @@
     
     <nav>
         <ul>
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
-            
             <!-- Show up when logged in and change Login to Logout-->
             <li><a href="#" data-remodal-target="boxmodal"><i class="fa fa-plus"></i> Add Content</a></li>
             <li><a href="#">Logout</a></li>
@@ -211,9 +208,9 @@
     </footer>
 </div>
 
+<form id="my_form" action="/upload/" target="form_target" method="post" enctype="multipart/form-data" style="width:0px;height:0;overflow:hidden"><input name="image" type="file" onchange="$('#my_form').submit();this.value='';"></form>
 
-
-
+<!-- Loan JS -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
 <script src="js/jquery.remodal.min.js"></script>

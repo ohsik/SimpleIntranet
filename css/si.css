@@ -8,7 +8,7 @@ html, body{
     margin: 0;
     font-family: 'Open Sans', sans-serif, helvetica, arial;
     font-size: 16px;
-    background: #f4f4f4;
+    background: #eeeeee;
     font-weight: 300;
 }
 h1, h2, h3, h4, h5, h6{
@@ -111,6 +111,13 @@ textarea{
 }
 .m-footer{
     margin: 20px 0;
+}
+
+/* Packery resizable */
+.main-div.ui-draggable-dragging,
+.main-div.is-positioning-post-drag {
+  border: 5px solid rgba(0, 0, 0, 0.8);
+  z-index: 2;
 }
 
 @media (max-width: 767px){
